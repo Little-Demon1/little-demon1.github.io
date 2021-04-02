@@ -6,7 +6,7 @@
   <link href="https://www.little-demon.cn/atom.xml" rel="self"/>
   
   <link href="https://www.little-demon.cn/"/>
-  <updated>2021-04-02T12:02:54.856Z</updated>
+  <updated>2021-04-02T13:00:53.765Z</updated>
   <id>https://www.little-demon.cn/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://www.little-demon.cn/post/5a35eda1.html"/>
     <id>https://www.little-demon.cn/post/5a35eda1.html</id>
     <published>2021-04-02T11:45:28.000Z</published>
-    <updated>2021-04-02T12:02:54.856Z</updated>
+    <updated>2021-04-02T13:00:53.765Z</updated>
     
     
     <summary type="html">哥斯拉大战金刚1080p高清资源</summary>
@@ -31,9 +31,7 @@
     <category term="影视推荐" scheme="https://www.little-demon.cn/categories/%E5%BD%B1%E8%A7%86%E6%8E%A8%E8%8D%90/"/>
     
     
-    <category term="哥斯拉" scheme="https://www.little-demon.cn/tags/%E5%93%A5%E6%96%AF%E6%8B%89/"/>
-    
-    <category term="金刚" scheme="https://www.little-demon.cn/tags/%E9%87%91%E5%88%9A/"/>
+    <category term="哥斯拉VS金刚" scheme="https://www.little-demon.cn/tags/%E5%93%A5%E6%96%AF%E6%8B%89VS%E9%87%91%E5%88%9A/"/>
     
   </entry>
   
@@ -184,9 +182,9 @@
     
     <category term="电子产品设计开发" scheme="https://www.little-demon.cn/tags/%E7%94%B5%E5%AD%90%E4%BA%A7%E5%93%81%E8%AE%BE%E8%AE%A1%E5%BC%80%E5%8F%91/"/>
     
-    <category term="电路原理图设计" scheme="https://www.little-demon.cn/tags/%E7%94%B5%E8%B7%AF%E5%8E%9F%E7%90%86%E5%9B%BE%E8%AE%BE%E8%AE%A1/"/>
-    
     <category term="PCB设计" scheme="https://www.little-demon.cn/tags/PCB%E8%AE%BE%E8%AE%A1/"/>
+    
+    <category term="电路原理图设计" scheme="https://www.little-demon.cn/tags/%E7%94%B5%E8%B7%AF%E5%8E%9F%E7%90%86%E5%9B%BE%E8%AE%BE%E8%AE%A1/"/>
     
   </entry>
   
@@ -291,9 +289,9 @@
     
     <category term="电子产品设计开发" scheme="https://www.little-demon.cn/tags/%E7%94%B5%E5%AD%90%E4%BA%A7%E5%93%81%E8%AE%BE%E8%AE%A1%E5%BC%80%E5%8F%91/"/>
     
-    <category term="电路原理图设计" scheme="https://www.little-demon.cn/tags/%E7%94%B5%E8%B7%AF%E5%8E%9F%E7%90%86%E5%9B%BE%E8%AE%BE%E8%AE%A1/"/>
-    
     <category term="PCB设计" scheme="https://www.little-demon.cn/tags/PCB%E8%AE%BE%E8%AE%A1/"/>
+    
+    <category term="电路原理图设计" scheme="https://www.little-demon.cn/tags/%E7%94%B5%E8%B7%AF%E5%8E%9F%E7%90%86%E5%9B%BE%E8%AE%BE%E8%AE%A1/"/>
     
   </entry>
   
