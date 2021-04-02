@@ -6,7 +6,7 @@
   <link href="https://www.little-demon.cn/atom.xml" rel="self"/>
   
   <link href="https://www.little-demon.cn/"/>
-  <updated>2021-03-21T02:19:44.628Z</updated>
+  <updated>2021-04-02T11:27:18.697Z</updated>
   <id>https://www.little-demon.cn/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Protoues 8.7安装绿化</title>
+    <link href="https://www.little-demon.cn/post/e2fde651.html"/>
+    <id>https://www.little-demon.cn/post/e2fde651.html</id>
+    <published>2021-04-02T10:08:37.000Z</published>
+    <updated>2021-04-02T11:27:18.697Z</updated>
+    
+    
+    <summary type="html">Protoues 8.7安装绿化汉化</summary>
+    
+    
+    
+    <category term="嵌入式开发" scheme="https://www.little-demon.cn/categories/%E5%B5%8C%E5%85%A5%E5%BC%8F%E5%BC%80%E5%8F%91/"/>
+    
+    
+    <category term="电子产品设计开发" scheme="https://www.little-demon.cn/tags/%E7%94%B5%E5%AD%90%E4%BA%A7%E5%93%81%E8%AE%BE%E8%AE%A1%E5%BC%80%E5%8F%91/"/>
+    
+    <category term="EDA工具" scheme="https://www.little-demon.cn/tags/EDA%E5%B7%A5%E5%85%B7/"/>
+    
+    <category term="单片机仿真" scheme="https://www.little-demon.cn/tags/%E5%8D%95%E7%89%87%E6%9C%BA%E4%BB%BF%E7%9C%9F/"/>
+    
+  </entry>
   
   <entry>
     <title>https网站无法正常访问，显示hsts相关协议</title>
@@ -128,7 +151,7 @@
     <link href="https://www.little-demon.cn/post/44208.html"/>
     <id>https://www.little-demon.cn/post/44208.html</id>
     <published>2021-03-05T08:30:04.000Z</published>
-    <updated>2021-03-23T08:59:58.537Z</updated>
+    <updated>2021-04-02T11:23:30.365Z</updated>
     
     
     <summary type="html">Alitum Designer 20 安装绿化</summary>
