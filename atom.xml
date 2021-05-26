@@ -6,7 +6,7 @@
   <link href="https://www.little-demon.cn/atom.xml" rel="self"/>
   
   <link href="https://www.little-demon.cn/"/>
-  <updated>2021-04-02T13:00:53.765Z</updated>
+  <updated>2021-05-26T09:10:42.916Z</updated>
   <id>https://www.little-demon.cn/</id>
   
   <author>
@@ -17,11 +17,66 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>51单片机开发笔记（2）</title>
+    <link href="https://www.little-demon.cn/post/9e0646dd.html"/>
+    <id>https://www.little-demon.cn/post/9e0646dd.html</id>
+    <published>2021-05-26T06:58:34.000Z</published>
+    <updated>2021-05-26T09:10:42.916Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1&gt;一、MCS-51单片机的外特性&lt;/h1&gt;
+&lt;p&gt;&lt;code&gt;重要说明&lt;/code&gt;:&lt;/p&gt;
+&lt;p&gt;MCS-51系列单片机是Intel公司的注册产品;&lt;/p&gt;
+&lt;p&gt;MCS-51系列包含8051、8031、8751等型号;&lt;/p&gt;
+&lt;p&gt;AT89系列单片机是ATMEL公司</summary>
+        
+      
+    
+    
+    
+    <category term="个人笔记" scheme="https://www.little-demon.cn/categories/%E4%B8%AA%E4%BA%BA%E7%AC%94%E8%AE%B0/"/>
+    
+    
+    <category term="-51单片机" scheme="https://www.little-demon.cn/tags/51%E5%8D%95%E7%89%87%E6%9C%BA/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>51单片机开发笔记（1）</title>
+    <link href="https://www.little-demon.cn/post/8cb3e933.html"/>
+    <id>https://www.little-demon.cn/post/8cb3e933.html</id>
+    <published>2021-05-26T06:08:34.000Z</published>
+    <updated>2021-05-26T09:12:32.211Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1&gt;一、单片机技术概括&lt;/h1&gt;
+&lt;h2</summary>
+        
+      
+    
+    
+    
+    <category term="个人笔记" scheme="https://www.little-demon.cn/categories/%E4%B8%AA%E4%BA%BA%E7%AC%94%E8%AE%B0/"/>
+    
+    
+    <category term="-51单片机" scheme="https://www.little-demon.cn/tags/51%E5%8D%95%E7%89%87%E6%9C%BA/"/>
+    
+  </entry>
+  
+  <entry>
     <title>哥斯拉大战金刚1080p高清资源</title>
     <link href="https://www.little-demon.cn/post/5a35eda1.html"/>
     <id>https://www.little-demon.cn/post/5a35eda1.html</id>
     <published>2021-04-02T11:45:28.000Z</published>
-    <updated>2021-04-02T13:00:53.765Z</updated>
+    <updated>2021-05-26T09:13:55.338Z</updated>
     
     
     <summary type="html">哥斯拉大战金刚1080p高清资源</summary>
@@ -63,7 +118,7 @@
     <link href="https://www.little-demon.cn/post/cf32848a.html"/>
     <id>https://www.little-demon.cn/post/cf32848a.html</id>
     <published>2021-03-21T01:55:49.000Z</published>
-    <updated>2021-03-21T02:19:44.628Z</updated>
+    <updated>2021-04-27T13:22:22.680Z</updated>
     
     
     <summary type="html">https网站无法正常访问，显示hsts相关协议</summary>
