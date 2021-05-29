@@ -6,7 +6,7 @@
   <link href="https://www.little-demon.cn/atom.xml" rel="self"/>
   
   <link href="https://www.little-demon.cn/"/>
-  <updated>2021-05-29T08:24:02.948Z</updated>
+  <updated>2021-05-29T09:45:19.189Z</updated>
   <id>https://www.little-demon.cn/</id>
   
   <author>
@@ -17,11 +17,37 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>51单片机开发笔记（2）</title>
+    <title>51单片机开发入门（3）-IO口应用</title>
+    <link href="https://www.little-demon.cn/post/8d56968.html"/>
+    <id>https://www.little-demon.cn/post/8d56968.html</id>
+    <published>2021-05-29T08:44:27.000Z</published>
+    <updated>2021-05-29T09:45:19.189Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1&gt;前言&lt;/h1&gt;
+&lt;p&gt;根据前面对51单片机的了解和基础理论知识的掌握，接下来就正式进入单片机开发——实践。引用最近几天追的电视剧《觉醒年代》里新文化领袖陈独秀、李大钊等革命前辈们一直在说的和在践行的马克思的一句话““实践是检验真理的唯一标准”这句话。“理论基础决定上层建筑</summary>
+        
+      
+    
+    
+    
+    <category term="个人笔记" scheme="https://www.little-demon.cn/categories/%E4%B8%AA%E4%BA%BA%E7%AC%94%E8%AE%B0/"/>
+    
+    
+    <category term="51单片机" scheme="https://www.little-demon.cn/tags/51%E5%8D%95%E7%89%87%E6%9C%BA/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>51单片机开发入门（2）-内外特性</title>
     <link href="https://www.little-demon.cn/post/9e0646dd.html"/>
     <id>https://www.little-demon.cn/post/9e0646dd.html</id>
     <published>2021-05-26T06:58:34.000Z</published>
-    <updated>2021-05-29T08:24:02.948Z</updated>
+    <updated>2021-05-29T08:49:04.627Z</updated>
     
     
       
@@ -46,11 +72,11 @@
   </entry>
   
   <entry>
-    <title>51单片机开发笔记（1）</title>
+    <title>51单片机开发入门（1）-单片机简介</title>
     <link href="https://www.little-demon.cn/post/8cb3e933.html"/>
     <id>https://www.little-demon.cn/post/8cb3e933.html</id>
     <published>2021-05-26T06:08:34.000Z</published>
-    <updated>2021-05-29T08:19:25.969Z</updated>
+    <updated>2021-05-29T08:50:37.482Z</updated>
     
     
       
