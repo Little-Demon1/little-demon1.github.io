@@ -6,7 +6,7 @@
   <link href="https://www.little-demon.cn/atom.xml" rel="self"/>
   
   <link href="https://www.little-demon.cn/"/>
-  <updated>2021-05-26T09:10:42.916Z</updated>
+  <updated>2021-05-29T08:24:02.948Z</updated>
   <id>https://www.little-demon.cn/</id>
   
   <author>
@@ -21,18 +21,18 @@
     <link href="https://www.little-demon.cn/post/9e0646dd.html"/>
     <id>https://www.little-demon.cn/post/9e0646dd.html</id>
     <published>2021-05-26T06:58:34.000Z</published>
-    <updated>2021-05-26T09:10:42.916Z</updated>
+    <updated>2021-05-29T08:24:02.948Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h1&gt;一、MCS-51单片机的外特性&lt;/h1&gt;
+    <summary type="html">&lt;h1&gt;MCS-51单片机的外特性&lt;/h1&gt;
 &lt;p&gt;&lt;code&gt;重要说明&lt;/code&gt;:&lt;/p&gt;
 &lt;p&gt;MCS-51系列单片机是Intel公司的注册产品;&lt;/p&gt;
 &lt;p&gt;MCS-51系列包含8051、8031、8751等型号;&lt;/p&gt;
-&lt;p&gt;AT89系列单片机是ATMEL公司</summary>
+&lt;p&gt;AT89系列单片机是ATMEL公司的注</summary>
         
       
     
@@ -41,7 +41,7 @@
     <category term="个人笔记" scheme="https://www.little-demon.cn/categories/%E4%B8%AA%E4%BA%BA%E7%AC%94%E8%AE%B0/"/>
     
     
-    <category term="-51单片机" scheme="https://www.little-demon.cn/tags/51%E5%8D%95%E7%89%87%E6%9C%BA/"/>
+    <category term="51单片机" scheme="https://www.little-demon.cn/tags/51%E5%8D%95%E7%89%87%E6%9C%BA/"/>
     
   </entry>
   
@@ -50,14 +50,14 @@
     <link href="https://www.little-demon.cn/post/8cb3e933.html"/>
     <id>https://www.little-demon.cn/post/8cb3e933.html</id>
     <published>2021-05-26T06:08:34.000Z</published>
-    <updated>2021-05-26T09:12:32.211Z</updated>
+    <updated>2021-05-29T08:19:25.969Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h1&gt;一、单片机技术概括&lt;/h1&gt;
+    <summary type="html">&lt;h1&gt;单片机技术概括&lt;/h1&gt;
 &lt;h2</summary>
         
       
@@ -67,7 +67,7 @@
     <category term="个人笔记" scheme="https://www.little-demon.cn/categories/%E4%B8%AA%E4%BA%BA%E7%AC%94%E8%AE%B0/"/>
     
     
-    <category term="-51单片机" scheme="https://www.little-demon.cn/tags/51%E5%8D%95%E7%89%87%E6%9C%BA/"/>
+    <category term="51单片机" scheme="https://www.little-demon.cn/tags/51%E5%8D%95%E7%89%87%E6%9C%BA/"/>
     
   </entry>
   
