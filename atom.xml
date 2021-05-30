@@ -6,7 +6,7 @@
   <link href="https://www.little-demon.cn/atom.xml" rel="self"/>
   
   <link href="https://www.little-demon.cn/"/>
-  <updated>2021-05-30T07:56:42.240Z</updated>
+  <updated>2021-05-30T08:05:14.109Z</updated>
   <id>https://www.little-demon.cn/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://www.little-demon.cn/post/8d56968.html"/>
     <id>https://www.little-demon.cn/post/8d56968.html</id>
     <published>2021-05-29T08:44:27.000Z</published>
-    <updated>2021-05-30T07:56:42.240Z</updated>
+    <updated>2021-05-30T08:05:14.109Z</updated>
     
     
       
@@ -324,9 +324,9 @@
     
     <category term="电子产品设计开发" scheme="https://www.little-demon.cn/tags/%E7%94%B5%E5%AD%90%E4%BA%A7%E5%93%81%E8%AE%BE%E8%AE%A1%E5%BC%80%E5%8F%91/"/>
     
-    <category term="ARM" scheme="https://www.little-demon.cn/tags/ARM/"/>
-    
     <category term="STM32" scheme="https://www.little-demon.cn/tags/STM32/"/>
+    
+    <category term="ARM" scheme="https://www.little-demon.cn/tags/ARM/"/>
     
   </entry>
   
@@ -347,9 +347,9 @@
     
     <category term="电子产品设计开发" scheme="https://www.little-demon.cn/tags/%E7%94%B5%E5%AD%90%E4%BA%A7%E5%93%81%E8%AE%BE%E8%AE%A1%E5%BC%80%E5%8F%91/"/>
     
-    <category term="C51" scheme="https://www.little-demon.cn/tags/C51/"/>
-    
     <category term="ARM" scheme="https://www.little-demon.cn/tags/ARM/"/>
+    
+    <category term="C51" scheme="https://www.little-demon.cn/tags/C51/"/>
     
   </entry>
   
