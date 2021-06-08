@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>DXP 没有Redefine Board Shape的两种解决方法</title>
+      <link href="post/6be88cef.html"/>
+      <url>post/6be88cef.html</url>
+      
+        <content type="html"><![CDATA[<h1>前言</h1><p>昨儿在使用Altium Designer 16版本来进行电路CAD课程作业设计的时候，在画电路板的边框后进行重新定义板子形状的时候发现和老版本有些区别。</p><p>在DXP版本升级过程中，有些功能的使用发生了变化，尤其是本文主要介绍的redefine board shape功能。在新的版本里可能找不到重新定义板子形状的选项，并且和大家想象的也些出入。那么本篇文章主要介绍两种找不到redefine board shape的解决方法。</p><p><img src="https://blog-images-1304155699.cos.ap-nanjing.myqcloud.com/image-20210608191316966.png" alt="image-20210608191316966"></p><h1>新版本找不到Redefine board Shape</h1><p>首先，创建一个新的PCBDOC文件，常见情况下新建后我们见到的都是黑色工作区。</p><p><img src="https://blog-images-1304155699.cos.ap-nanjing.myqcloud.com/image-20210608191513799.png" alt="image-20210608191513799"></p><p>根据老版本软件的用法，我们通过：</p><p>设计（红框1）–板子形状（红框2）—Redefine Board Shape（红框3）；</p><p>但是显然我们没有在红框3中找到重新定义板子形状的选项。</p><p>注：这就是新版本的DXP的一种改变。</p><p><img src="https://blog-images-1304155699.cos.ap-nanjing.myqcloud.com/image-20210608192418061.png" alt="image-20210608192418061"></p><h1>经典的解决办法</h1><p>第一步，在PCB绘制工作区内（黑色区域）内根据正常的画边框方法画好边框线后在工具栏中找到：查看（VIEW）（红框1）；点击其菜单下的：Board planning Mode（红框2）；</p><p>这里需要画上的边框线条为（Mechanical 1 Layer）同时为了电路元器件禁止布线层（Keep-Out Layer）也需要绘制上禁止布线边框。</p><p>🚧🚧注：这是最关键一步。</p><p><img src="https://blog-images-1304155699.cos.ap-nanjing.myqcloud.com/image-20210608192718383.png" alt="image-20210608192718383"></p><p>第二步，此时板子颜色变成绿色。就会出现十字光标（红框1）；我们在所要的位置点选出恰当的点（红框2）；然后退出右键就可以重新定义板子形状。</p><p><img src="https://blog-images-1304155699.cos.ap-nanjing.myqcloud.com/image-20210608193329167.png" alt="image-20210608193329167"></p><p>第三步，想要恢复到默认的PCB编辑界面也是很简单的；点击工具栏中的：VIEW（红框1）；进一步，点击其菜单下的切换到2维视图（红框2）；进一步，板子由绿色变成了常见的黑色（红框3）；</p><p><img src="https://blog-images-1304155699.cos.ap-nanjing.myqcloud.com/image-20210608194237475.png" alt="image-20210608194237475"></p><h1>快捷键法</h1><p>在Keep-Out-Layer层，做好了板子的外形，把外形都选中后，然后快捷键D-S-D即可.</p><p>注：快捷键法对于常用DXP的技术人员是好用的，但是偶尔用DXP的人很容易忘记快捷键。所以推荐经典方法。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 个人笔记 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Altium Design </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>51单片机开发入门（3）-IO口应用</title>
       <link href="post/8d56968.html"/>
       <url>post/8d56968.html</url>
@@ -288,9 +313,9 @@
             
             <tag> 电子产品设计开发 </tag>
             
-            <tag> PCB设计 </tag>
-            
             <tag> 电路原理图设计 </tag>
+            
+            <tag> PCB设计 </tag>
             
         </tags>
       
@@ -367,9 +392,9 @@
             
             <tag> 电子产品设计开发 </tag>
             
-            <tag> ARM </tag>
-            
             <tag> STM32 </tag>
+            
+            <tag> ARM </tag>
             
         </tags>
       
@@ -396,9 +421,9 @@
             
             <tag> 电子产品设计开发 </tag>
             
-            <tag> C51 </tag>
-            
             <tag> ARM </tag>
+            
+            <tag> C51 </tag>
             
         </tags>
       
@@ -425,9 +450,9 @@
             
             <tag> 电子产品设计开发 </tag>
             
-            <tag> PCB设计 </tag>
-            
             <tag> 电路原理图设计 </tag>
+            
+            <tag> PCB设计 </tag>
             
         </tags>
       
