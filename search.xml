@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>Altium Designer新版本PCB电路板添加logo</title>
+      <link href="post/3a110de8.html"/>
+      <url>post/3a110de8.html</url>
+      
+        <content type="html"><![CDATA[<h1>前言</h1><p>这段时间可以说是不断的踩坑了，同时也有了不断进步的机会，这几天一直在完成学校老师布置的PCB实训任务，在完成原理图设计、封装管理、上次的边框定义以及电路布局连线全都完成后，就进入了收尾工作同时也是项目完美完成的终章，那么废话不多说，直接上干货。</p><h1>所需文件下载</h1><p>在老版本的Altium Designer 里有logo运行的脚本文件，那么新版本也想运用这个logo添加方法就需要进行下载，下面提供了脚本文件的下载链接：</p><p><a href="https://pan.baidu.com/s/1ee7laN8-j_pQrA2T8m3ZTA">点击此处即可下载</a>提取码：6666</p><h1>脚本文件下载及预览</h1><p>脚本文件我打包成了一个压缩包，下载解压下来文件夹具体内容如下：</p><p><img src="https://blog-images-1304155699.cos.ap-nanjing.myqcloud.com/image-20210609222935336.png" alt="image-20210609222935336"></p><p>里面就包含了几个样例的logo图片以及.PRJSCR后缀的脚本文件。</p><p>注意📢📢📢：这里前情提要一下，Altium Designer 中需要用到logo的图片文件格式一定要bmp。</p><h1>添加PCB-LOGO</h1><ul><li>复制所下载下来的文件夹到软件所在安装目录</li></ul><p>这里以我的Altium Designer 16版本为例，将文件夹复制到Altium Designer 16安装目录里的Examples目录内</p><p>》》–Altium Designer 16》》–Examples</p><p>操作截图如下：</p><p>（1）、复制所要的文件夹</p><p><img src="https://blog-images-1304155699.cos.ap-nanjing.myqcloud.com/image-20210609223836277.png" alt="image-20210609223836277"></p><p>（2）、黏贴到上面说的指定位置（这里以我的安装在D：盘里面的Altium Designer 16的Examples为例）</p><p><img src="https://blog-images-1304155699.cos.ap-nanjing.myqcloud.com/image-20210609224025694.png" alt="image-20210609224025694"></p><ul><li>打开Altium Designer 16软件进行脚本运行</li></ul><p>（1）、首先点击软件左上角 <code>DXP</code>图标菜单</p><p><img src="https://blog-images-1304155699.cos.ap-nanjing.myqcloud.com/image-20210609224258174.png" alt="image-20210609224258174"></p><p>（2）、点击运行 <code>Run Script</code>菜单</p><p><img src="https://blog-images-1304155699.cos.ap-nanjing.myqcloud.com/image-20210609224528485.png" alt="image-20210609224528485"></p><p>（3）、出现操作对话框后点击<code>Browse</code></p><p><img src="https://blog-images-1304155699.cos.ap-nanjing.myqcloud.com/image-20210609224634590.png" alt="image-20210609224634590"></p><p>（4）、找到刚刚放置脚本文件的位置，打开脚本文件</p><p><img src="https://blog-images-1304155699.cos.ap-nanjing.myqcloud.com/image-20210609224735101.png" alt="image-20210609224735101"></p><p><img src="https://blog-images-1304155699.cos.ap-nanjing.myqcloud.com/image-20210609224808563.png" alt="image-20210609224808563"></p><p>（5）、脚本文件打开，添加LOGO图片</p><p>这里鼠标左键双击下面图片所示的操作菜单栏</p><p><img src="https://blog-images-1304155699.cos.ap-nanjing.myqcloud.com/image-20210609224931558.png" alt="image-20210609224931558"></p><p>这里软件会自动生成一个PcbDoc文件，同时这里用Load菜单添加对应LOGO文件</p><p><img src="https://blog-images-1304155699.cos.ap-nanjing.myqcloud.com/image-20210609225016928.png" alt="image-20210609225016928"></p><p>这里利用测试用的bmp参考图片为例这里可以对应修改想要的比例，可以1：1，也可以调整放大</p><p><img src="https://blog-images-1304155699.cos.ap-nanjing.myqcloud.com/image-20210609230254851.png" alt="image-20210609230254851"></p><p>（5）、这里可以通过所圈对话框进行生成LOGO所在的层面，这里以顶层丝印为例，</p><p>LOGO图片添加成功，等待加载生成</p><p><img src="https://blog-images-1304155699.cos.ap-nanjing.myqcloud.com/image-20210609230059692.png" alt="image-20210609230059692"></p><p>这里可以看到已经生成了。</p><p><img src="https://blog-images-1304155699.cos.ap-nanjing.myqcloud.com/image-20210609230118352.png" alt="image-20210609230118352"></p><p>（6）、这里为了LOGO文件的整体移动可以将其生成一个“整体图标”，具体操作如下：</p><p><img src="https://blog-images-1304155699.cos.ap-nanjing.myqcloud.com/image-20210609230159440.png" alt="image-20210609230159440"></p><p><img src="https://blog-images-1304155699.cos.ap-nanjing.myqcloud.com/image-20210609230437248.png" alt="image-20210609230437248"></p><ul><li>这里可以将logo文件直接保存，在PCB电路板中直接添加了，但是要十分注意这里光标不要离丝印太远到时候移动不便。</li></ul><p><img src="https://blog-images-1304155699.cos.ap-nanjing.myqcloud.com/image-20210609230745318.png" alt="image-20210609230745318"></p><h1>补充问题</h1><p>这里在添加LOGO的过程中，也踩了一些坑，老师提供的是jpg格式和png的格式，这里Altium Designer的软件只能识别BMP格式的图片文件，那么这里就需要用到画图软件，我们可以线用画图软件打开这个jpg或者png的格式文件。</p><p><img src="https://blog-images-1304155699.cos.ap-nanjing.myqcloud.com/image-20210609231045807.png" alt="image-20210609231045807"></p><p>通过另存为进行文件格式的修改，即可进行上面LOGO的添加步骤。</p><p><img src="https://blog-images-1304155699.cos.ap-nanjing.myqcloud.com/image-20210609231149733.png" alt="image-20210609231149733"></p><p>选择256位BMP或者24位BMP格式，保存即可。</p><p><img src="https://blog-images-1304155699.cos.ap-nanjing.myqcloud.com/image-20210609231250462.png" alt="image-20210609231250462"></p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> Altium Design </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>DXP 没有Redefine Board Shape的两种解决方法</title>
       <link href="post/6be88cef.html"/>
       <url>post/6be88cef.html</url>
@@ -313,9 +332,9 @@
             
             <tag> 电子产品设计开发 </tag>
             
-            <tag> 电路原理图设计 </tag>
-            
             <tag> PCB设计 </tag>
+            
+            <tag> 电路原理图设计 </tag>
             
         </tags>
       
@@ -392,9 +411,9 @@
             
             <tag> 电子产品设计开发 </tag>
             
-            <tag> STM32 </tag>
-            
             <tag> ARM </tag>
+            
+            <tag> STM32 </tag>
             
         </tags>
       
@@ -421,9 +440,9 @@
             
             <tag> 电子产品设计开发 </tag>
             
-            <tag> ARM </tag>
-            
             <tag> C51 </tag>
+            
+            <tag> ARM </tag>
             
         </tags>
       
@@ -450,9 +469,9 @@
             
             <tag> 电子产品设计开发 </tag>
             
-            <tag> 电路原理图设计 </tag>
-            
             <tag> PCB设计 </tag>
+            
+            <tag> 电路原理图设计 </tag>
             
         </tags>
       

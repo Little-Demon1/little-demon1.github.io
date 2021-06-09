@@ -6,7 +6,7 @@
   <link href="https://www.little-demon.cn/atom.xml" rel="self"/>
   
   <link href="https://www.little-demon.cn/"/>
-  <updated>2021-06-08T11:53:18.801Z</updated>
+  <updated>2021-06-09T15:15:03.813Z</updated>
   <id>https://www.little-demon.cn/</id>
   
   <author>
@@ -17,11 +17,35 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Altium Designer新版本PCB电路板添加logo</title>
+    <link href="https://www.little-demon.cn/post/3a110de8.html"/>
+    <id>https://www.little-demon.cn/post/3a110de8.html</id>
+    <published>2021-06-09T14:11:19.000Z</published>
+    <updated>2021-06-09T15:15:03.813Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1&gt;前言&lt;/h1&gt;
+&lt;p&gt;这段时间可以说是不断的踩坑了，同时也有了不断进步的机会，这几天一直在完成学校老师布置的PCB实训任务，在完成原理图设计、封装管理、上次的边框定义以及电路布局连线全都完成后，就进入了收尾工作同时也是项目完美完成的终章，那么废话不多说，直接上干货。&lt;/p</summary>
+        
+      
+    
+    
+    
+    
+    <category term="Altium Design" scheme="https://www.little-demon.cn/tags/Altium-Design/"/>
+    
+  </entry>
+  
+  <entry>
     <title>DXP 没有Redefine Board Shape的两种解决方法</title>
     <link href="https://www.little-demon.cn/post/6be88cef.html"/>
     <id>https://www.little-demon.cn/post/6be88cef.html</id>
     <published>2021-06-08T10:58:26.000Z</published>
-    <updated>2021-06-08T11:53:18.801Z</updated>
+    <updated>2021-06-08T11:53:49.545Z</updated>
     
     
       
@@ -289,9 +313,9 @@
     
     <category term="电子产品设计开发" scheme="https://www.little-demon.cn/tags/%E7%94%B5%E5%AD%90%E4%BA%A7%E5%93%81%E8%AE%BE%E8%AE%A1%E5%BC%80%E5%8F%91/"/>
     
-    <category term="电路原理图设计" scheme="https://www.little-demon.cn/tags/%E7%94%B5%E8%B7%AF%E5%8E%9F%E7%90%86%E5%9B%BE%E8%AE%BE%E8%AE%A1/"/>
-    
     <category term="PCB设计" scheme="https://www.little-demon.cn/tags/PCB%E8%AE%BE%E8%AE%A1/"/>
+    
+    <category term="电路原理图设计" scheme="https://www.little-demon.cn/tags/%E7%94%B5%E8%B7%AF%E5%8E%9F%E7%90%86%E5%9B%BE%E8%AE%BE%E8%AE%A1/"/>
     
   </entry>
   
@@ -350,9 +374,9 @@
     
     <category term="电子产品设计开发" scheme="https://www.little-demon.cn/tags/%E7%94%B5%E5%AD%90%E4%BA%A7%E5%93%81%E8%AE%BE%E8%AE%A1%E5%BC%80%E5%8F%91/"/>
     
-    <category term="STM32" scheme="https://www.little-demon.cn/tags/STM32/"/>
-    
     <category term="ARM" scheme="https://www.little-demon.cn/tags/ARM/"/>
+    
+    <category term="STM32" scheme="https://www.little-demon.cn/tags/STM32/"/>
     
   </entry>
   
@@ -373,9 +397,9 @@
     
     <category term="电子产品设计开发" scheme="https://www.little-demon.cn/tags/%E7%94%B5%E5%AD%90%E4%BA%A7%E5%93%81%E8%AE%BE%E8%AE%A1%E5%BC%80%E5%8F%91/"/>
     
-    <category term="ARM" scheme="https://www.little-demon.cn/tags/ARM/"/>
-    
     <category term="C51" scheme="https://www.little-demon.cn/tags/C51/"/>
+    
+    <category term="ARM" scheme="https://www.little-demon.cn/tags/ARM/"/>
     
   </entry>
   
@@ -396,9 +420,9 @@
     
     <category term="电子产品设计开发" scheme="https://www.little-demon.cn/tags/%E7%94%B5%E5%AD%90%E4%BA%A7%E5%93%81%E8%AE%BE%E8%AE%A1%E5%BC%80%E5%8F%91/"/>
     
-    <category term="电路原理图设计" scheme="https://www.little-demon.cn/tags/%E7%94%B5%E8%B7%AF%E5%8E%9F%E7%90%86%E5%9B%BE%E8%AE%BE%E8%AE%A1/"/>
-    
     <category term="PCB设计" scheme="https://www.little-demon.cn/tags/PCB%E8%AE%BE%E8%AE%A1/"/>
+    
+    <category term="电路原理图设计" scheme="https://www.little-demon.cn/tags/%E7%94%B5%E8%B7%AF%E5%8E%9F%E7%90%86%E5%9B%BE%E8%AE%BE%E8%AE%A1/"/>
     
   </entry>
   
