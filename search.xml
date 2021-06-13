@@ -29,7 +29,7 @@
     
     
     <entry>
-      <title>51单片机开发（4）-中断系统</title>
+      <title>51单片机开发入门（4）-中断系统</title>
       <link href="post/e65a9e57.html"/>
       <url>post/e65a9e57.html</url>
       
@@ -461,9 +461,9 @@
             
             <tag> 电子产品设计开发 </tag>
             
-            <tag> STM32 </tag>
-            
             <tag> ARM </tag>
+            
+            <tag> STM32 </tag>
             
         </tags>
       
@@ -490,9 +490,9 @@
             
             <tag> 电子产品设计开发 </tag>
             
-            <tag> ARM </tag>
-            
             <tag> C51 </tag>
+            
+            <tag> ARM </tag>
             
         </tags>
       
