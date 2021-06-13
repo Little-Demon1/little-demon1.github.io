@@ -6,7 +6,7 @@
   <link href="https://www.little-demon.cn/atom.xml" rel="self"/>
   
   <link href="https://www.little-demon.cn/"/>
-  <updated>2021-06-13T07:38:27.384Z</updated>
+  <updated>2021-06-13T07:39:28.923Z</updated>
   <id>https://www.little-demon.cn/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://www.little-demon.cn/post/e65a9e57.html"/>
     <id>https://www.little-demon.cn/post/e65a9e57.html</id>
     <published>2021-06-13T05:19:19.000Z</published>
-    <updated>2021-06-13T07:38:27.384Z</updated>
+    <updated>2021-06-13T07:39:28.923Z</updated>
     
     
       
@@ -339,9 +339,9 @@
     
     <category term="电子产品设计开发" scheme="https://www.little-demon.cn/tags/%E7%94%B5%E5%AD%90%E4%BA%A7%E5%93%81%E8%AE%BE%E8%AE%A1%E5%BC%80%E5%8F%91/"/>
     
-    <category term="电路原理图设计" scheme="https://www.little-demon.cn/tags/%E7%94%B5%E8%B7%AF%E5%8E%9F%E7%90%86%E5%9B%BE%E8%AE%BE%E8%AE%A1/"/>
-    
     <category term="PCB设计" scheme="https://www.little-demon.cn/tags/PCB%E8%AE%BE%E8%AE%A1/"/>
+    
+    <category term="电路原理图设计" scheme="https://www.little-demon.cn/tags/%E7%94%B5%E8%B7%AF%E5%8E%9F%E7%90%86%E5%9B%BE%E8%AE%BE%E8%AE%A1/"/>
     
   </entry>
   
@@ -446,9 +446,9 @@
     
     <category term="电子产品设计开发" scheme="https://www.little-demon.cn/tags/%E7%94%B5%E5%AD%90%E4%BA%A7%E5%93%81%E8%AE%BE%E8%AE%A1%E5%BC%80%E5%8F%91/"/>
     
-    <category term="电路原理图设计" scheme="https://www.little-demon.cn/tags/%E7%94%B5%E8%B7%AF%E5%8E%9F%E7%90%86%E5%9B%BE%E8%AE%BE%E8%AE%A1/"/>
-    
     <category term="PCB设计" scheme="https://www.little-demon.cn/tags/PCB%E8%AE%BE%E8%AE%A1/"/>
+    
+    <category term="电路原理图设计" scheme="https://www.little-demon.cn/tags/%E7%94%B5%E8%B7%AF%E5%8E%9F%E7%90%86%E5%9B%BE%E8%AE%BE%E8%AE%A1/"/>
     
   </entry>
   
