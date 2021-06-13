@@ -6,7 +6,7 @@
   <link href="https://www.little-demon.cn/atom.xml" rel="self"/>
   
   <link href="https://www.little-demon.cn/"/>
-  <updated>2021-06-13T07:39:28.923Z</updated>
+  <updated>2021-06-13T09:47:15.394Z</updated>
   <id>https://www.little-demon.cn/</id>
   
   <author>
@@ -17,11 +17,38 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>51单片机开发入门（5）-定时器/计数器</title>
+    <link href="https://www.little-demon.cn/post/bfbcdcd.html"/>
+    <id>https://www.little-demon.cn/post/bfbcdcd.html</id>
+    <published>2021-06-13T08:00:39.000Z</published>
+    <updated>2021-06-13T09:47:15.394Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1&gt;定时器/计数器阐述&lt;/h1&gt;
+&lt;p&gt;AT89S51单片机有**&lt;font color=#FF3030&gt;两个16位&lt;/font&gt;**内部定时/计数器，记作T0、T1。&lt;/p&gt;
+&lt;p&gt;&lt;font</summary>
+        
+      
+    
+    
+    
+    <category term="个人笔记" scheme="https://www.little-demon.cn/categories/%E4%B8%AA%E4%BA%BA%E7%AC%94%E8%AE%B0/"/>
+    
+    
+    <category term="51单片机" scheme="https://www.little-demon.cn/tags/51%E5%8D%95%E7%89%87%E6%9C%BA/"/>
+    
+  </entry>
+  
+  <entry>
     <title>51单片机开发（4）-中断系统</title>
     <link href="https://www.little-demon.cn/post/e65a9e57.html"/>
     <id>https://www.little-demon.cn/post/e65a9e57.html</id>
     <published>2021-06-13T05:19:19.000Z</published>
-    <updated>2021-06-13T07:39:28.923Z</updated>
+    <updated>2021-06-13T08:29:22.559Z</updated>
     
     
       
@@ -123,7 +150,7 @@
     <link href="https://www.little-demon.cn/post/9e0646dd.html"/>
     <id>https://www.little-demon.cn/post/9e0646dd.html</id>
     <published>2021-05-26T06:58:34.000Z</published>
-    <updated>2021-05-29T15:01:00.784Z</updated>
+    <updated>2021-06-13T09:48:18.455Z</updated>
     
     
       
@@ -449,27 +476,6 @@
     <category term="PCB设计" scheme="https://www.little-demon.cn/tags/PCB%E8%AE%BE%E8%AE%A1/"/>
     
     <category term="电路原理图设计" scheme="https://www.little-demon.cn/tags/%E7%94%B5%E8%B7%AF%E5%8E%9F%E7%90%86%E5%9B%BE%E8%AE%BE%E8%AE%A1/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Win10系统安装激活（二）系统激活</title>
-    <link href="https://www.little-demon.cn/post/28107.html"/>
-    <id>https://www.little-demon.cn/post/28107.html</id>
-    <published>2021-02-25T12:08:53.000Z</published>
-    <updated>2021-03-23T09:00:45.420Z</updated>
-    
-    
-    <summary type="html">Windows系统永久激活</summary>
-    
-    
-    
-    <category term="经验分享" scheme="https://www.little-demon.cn/categories/%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/"/>
-    
-    
-    <category term="永久激活" scheme="https://www.little-demon.cn/tags/%E6%B0%B8%E4%B9%85%E6%BF%80%E6%B4%BB/"/>
-    
-    <category term="Windows 10 激活" scheme="https://www.little-demon.cn/tags/Windows-10-%E6%BF%80%E6%B4%BB/"/>
     
   </entry>
   
