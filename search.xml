@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>51单片机开发（4）-中断系统</title>
+      <link href="post/e65a9e57.html"/>
+      <url>post/e65a9e57.html</url>
+      
+        <content type="html"><![CDATA[<h1>中断系统</h1><h2 id="中断的作用">中断的作用</h2><p><strong>所谓中断是指<strong><strong>CPU</strong></strong>对系统中或系统外发生的某个事件的一种响应过程，即<strong><strong>CPU</strong></strong>暂停现行程序的执行，而自动转去执行<strong><strong>预先安排好的</strong></strong>处理该事件的服务子程序（函数）。当处理完毕后，再返回被暂停程序的断点处，继续执行原来的程序。</strong></p><p><img src="https://blog-images-1304155699.cos.ap-nanjing.myqcloud.com/image-20210613132920720.png" alt="image-20210613132920720"></p><h2 id="8051单片机的中断资源">8051单片机的中断资源</h2><ul><li><strong>AT89S51</strong>有<strong>5</strong>个中断源</li></ul><p>​<strong>外部中断请求</strong>0，<strong>P3.2</strong></p><p>​<strong>定时器计数器</strong>0<strong>溢出</strong></p><p>​<strong>外部中断请求1</strong>，<strong>P3.3</strong></p><p>​<strong>定时器计数器1溢出</strong></p><p>​<strong>串口发送接收</strong></p><img src="https://blog-images-1304155699.cos.ap-nanjing.myqcloud.com/image-20210613133923572.png" alt="image-20210613133923572" style="zoom:50%;" /><p>2个可编程软件中断优先级(2级中断嵌套)</p><ul><li><strong>IE（中断允许寄存器）</strong></li></ul><p>中断源的中断请求是否能得到响应，受IE的控制；</p><ul><li><strong>IP（中断优先级寄存器）</strong></li></ul><p>各个中断源的优先级可由IP的各位来确定。</p><h3 id="TCON：定时／计数器控制寄存器">TCON：定时／计数器控制寄存器</h3><p><img src="https://blog-images-1304155699.cos.ap-nanjing.myqcloud.com/image-20210613134313362.png" alt="image-20210613134313362"></p><ul><li>定时计数器中断相关：</li></ul><p><strong><font color=#FF3030>TF1</font></strong> - 定时器1溢出中断标志</p><p><strong><font color=#FF3030>TF0</font></strong> - 定时器0溢出中断标志</p><ul><li>外部中断相关：</li></ul><p><strong><font color=#FF3030>IE1、IE0</font></strong> - 外部中断1、外部中断0中断标志</p><p><strong><font color=#FF3030> IT1、IT0</font></strong> - 外部中断1、外部中断0触发方式控制位<br>（IT=1: 下降沿触发）<br>（IT=0：低电平触发）</p><p>📢📢：TF1、TF0、IE1、IE0具有自动清零功能（进入中断响应程序时由**<font color=#FF3030>硬件</font>**清零）</p><h3 id="SCON：串行口控制寄存器">SCON：串行口控制寄存器</h3><p><img src="https://blog-images-1304155699.cos.ap-nanjing.myqcloud.com/image-20210613134819206.png" alt="image-20210613134819206"></p><p>SM0 SM1串行模式选择</p><p>SM2 多机通讯允许位：方式0时,此位应该为0；模式1时,当接收到停止位时,该位将置位；方式2或方式3时,当接收的第9位数据为1时,将置位</p><p>REN 串行接收允许位</p><p>TB8 在模式2和模式3中,将被发送数据的第9位</p><p>RB8：在方式0中, 不起作用；在方式1中该位为接收数据的停止位；在方式2和方式3 中为接收数据的第9位。</p><p>📢📢：<strong><font color=#FF3030>TI</font></strong> 串行发送结束标志，只能由**<font color=#FF3030>软件</font>** 清零</p><p>​**<font color=#FF3030>RI </font><strong>串行接收结束标志，只能由</strong><font color=#FF3030>软件</font>**清零</p><h3 id="MCS-51的中断控制系统">MCS-51的中断控制系统</h3><p><img src="https://blog-images-1304155699.cos.ap-nanjing.myqcloud.com/image-20210613135239736.png" alt="image-20210613135239736"></p><h1>中断的控制</h1><p><img src="https://blog-images-1304155699.cos.ap-nanjing.myqcloud.com/image-20210613135415257.png" alt="image-20210613135415257"></p><p><strong><font color=#FF3030>EA – 全局使能</font></strong></p><p>EX0 – 外部中断0使能</p><p>ET0 – 定时计数器溢出中断0使能</p><p>EX1 – 外部中断1使能</p><p>ET1 – 定时计数器溢出中断1使能</p><p>ES  – 串口中断使能</p><p>📌记忆：</p><p><strong>记忆：</strong></p><p>X – E**<font color=#FF3030>x</font>** ternal <strong>外部中断</strong></p><p>T – **<font color=#FF3030>T</font>**ime <strong>定时器计数器中断</strong></p><p>S – **<font color=#FF3030>S</font>**erial Port <strong>串口中断</strong></p><p><strong><font color=#FF3030>1 – 使能； 0 – 禁止</font></strong></p><p><img src="https://blog-images-1304155699.cos.ap-nanjing.myqcloud.com/image-20210613140442651.png" alt="image-20210613140442651"></p><p><img src="https://blog-images-1304155699.cos.ap-nanjing.myqcloud.com/image-20210613143521508.png" alt="image-20210613143521508"></p><p><strong><font color=#FF3030>1 – 高优先级；0 – 低优先级</font></strong></p><h1>8051单片机中断的优先级</h1><p><strong>8051单片机有可编程的两个</strong><font color=#FF3030>中断优先级</font>**，即可实现二级中断服务嵌套。每个中断源的中断优先级都是由中断优先级寄存器IP中的相应位的状态来规定的。<br>**<font color=#FF0880>（软件优先级）</font></p><p>**同一时刻同一优先级中的中断申请不止一个时，则有<font color=#FF3030>中断优先权</font>排队问题。同一优先级的中断优先权排队，由中断系统硬件查询机制确定的自然优先级形成。<br>**<font color=#FF0880>（硬件查询排序）</font></p><h2 id="8051单片机的中断优先级控制的三条原则：">8051单片机的中断优先级控制的三条原则：</h2><p>1、正在进行的中断过程<font color=#FF3030>不能被新的同级或低优先级的中断请求所中断</font>。</p><p><img src="https://blog-images-1304155699.cos.ap-nanjing.myqcloud.com/image-20210613144218153.png" alt="image-20210613144218153"></p><p>2、正在进行的低优先级中断服务，能被<font color=#FF3030>较高优先级中断请求所中断</font>。</p><p><img src="https://blog-images-1304155699.cos.ap-nanjing.myqcloud.com/image-20210613144325453.png" alt="image-20210613144325453"></p><p>3、CPU同时接收到几个中断时，<font color=#FF3030>首先响应优先级别最高的中断请求</font>。</p><p><img src="https://blog-images-1304155699.cos.ap-nanjing.myqcloud.com/image-20210613144426677.png" alt="image-20210613144426677"></p><h2 id="中断的硬件排序">中断的硬件排序</h2><p>**<font color=#FF3030>硬件排序</font>**是由单片机内部硬件的中断查询机制确定的，它是固定不变的。</p><p><img src="https://blog-images-1304155699.cos.ap-nanjing.myqcloud.com/image-20210613144620508.png" alt="image-20210613144620508"></p><h1>8051单片机中断的响应过程</h1><p><strong>CPU在每个机器周期的S5P2时刻扫描中断标志</strong></p><p>阻止条件：</p><p>（1）CPU正在处理同级的或者高一级的中断；</p><p>（2）当前机器周期不是当前所执行指令的最后一个机器周期；</p><p>（3）当前正在执行的指令是RETI指令或是对IE或者IP的读写指令</p><p>中断标志扫描结果不保留，每个周期都重新扫描</p><p>保存断点  →  调用 →  恢复断点</p><h1>8051外部中断</h1><p><img src="https://blog-images-1304155699.cos.ap-nanjing.myqcloud.com/image-20210613145017494.png" alt="image-20210613145017494"></p><p>如果外部中断输入引脚检测到如下信号：</p><p><strong><font color=#FF3030>下降沿</font></strong>（当IT0=1时）</p><p><strong><font color=#FF3030>低电平</font></strong>（当IT0=0时）</p><p>则相应中断标志将被自动置位，即IE0=1。CPU在S5P2时刻检测到中断标志位后，如果中断使能，并且没有阻止条件存在，将调用相应的中断服务函数，同时清除中断标志，执行完毕后返回原程序继续执行。</p><p><strong>1</strong>、<strong><font color=#FF3030>低电平触发方式</font></strong></p><p>外部中断申请触发器的状态随着CPU在每个机器周期采样到的外部中断输入引脚的电平变化而变化。</p><p>在<font color=#FF0880><strong>中断服务程序返回之前</strong>，<strong>外中断请求输入必须无效</strong></font>（即外部中断请求输入已由低电平变为高电平），否则会再次响应中断。</p><p>所以本方式<strong>适合于</strong>外部中断<strong>以低电平输入</strong>且中断服务程序能<strong>清除外部中断请求源</strong>（即外中断输入电平又变为高电平）的情况。</p><p><strong>2</strong>、<strong><font color=#FF3030>下降沿触发方式</font></strong></p><p>外部中断申请触发器能<font color=#FF0880>锁存外部中断输入线上的</font><strong>负跳变</strong>。即使不能响应，中断请求标志不丢失。</p><p>相继连续两次采样，一个机器周期为高，下一个机器周期采样为低，则中断申请触发器置1，直到CPU响应此中断时，才。</p><p>输入的负脉冲宽度至少保持12个时钟周期，才能被采样到。适合于以负脉冲形式输入的外部中断请求。</p><h2 id="中断标志的可靠产生">中断标志的可靠产生</h2><ul><li>下降沿（当IT0=1时）</li></ul><p>高电平持续时间 &gt;= 1个机器周期</p><p>低电平持续时间 &gt;= 1个机器周期</p><ul><li>低电平（当IT0=0时）</li></ul><p>低电平持续时间 &gt;= 1个机器周期</p><p>📢📢：针对**<font color=#FF3030>低电平触发</font>**方式，应当注意避免不必要的多次响应</p><h2 id="中断请求的撤销">中断请求的撤销</h2><ul><li>外部中断</li></ul><p>进入中断响应函数时**<font color=#FF3030>自动清除</font>**。（注意低电平方式）</p><ul><li>定时器中断</li></ul><p>进入中断响应函数时**<font color=#FF3030>自动清除</font>**。</p><ul><li>串口中断</li></ul><p>响应串行口的中断后，CPU无法知道是接收中断还是发送中断，还需测试这两个中断标志位，以<strong>判定是接收操作还是发送操作</strong>，然后才清除。所以串行口中断请求的撤销<strong>只能使用</strong><font color=#FF3030>软件</font>的方法，在中断服务程序中进行的。</p><h1>8051单片机的中断响应时间</h1><ul><li>最短响应时间</li></ul><p><img src="https://blog-images-1304155699.cos.ap-nanjing.myqcloud.com/image-20210613150513979.png" alt="image-20210613150513979"></p><p>实际考虑阻止条件，中断响应时间总是在<font color=#FF3030>3~8</font>个机器周期<br><font color=#FF0880>（前提：不考虑中断嵌套）</font></p><h1>8051的中断响应函数与寄存器组</h1><p>为了满足在C语言源程序中直接编写中断服务程序的要求，C51编译器对函数的定义进行了扩展，增加了一个关键字**<font color=#FF3030>interrupt</font>** 。它是函数定义时的一个可选关键字，加上这个关键字即可将一个函数定义成中断服务函数。</p><p><strong>中断响应函数的定义格式为：</strong></p><p><strong><font color=#FF3030>返回值数据类型 函数名（形式参数表）[ interrupt n ]</font></strong></p><p>**关键字interrupt后面的n是<font color=#FF3030>中断号</font> <strong>。编译器根据中断号计算</strong><font color=#FF3030>中断号向量</font> <strong>，具体的中断号n和中断向量取决于单片机芯片型号，<strong>8051</strong>单片机中断向量为</strong><font color=#FF3030>8n+3</font> **。</p><table><thead><tr><th>中断号n</th><th>中断源</th><th>中断向量8n+3</th></tr></thead><tbody><tr><td>0</td><td>外部中断0</td><td>0003H</td></tr><tr><td>1</td><td>定时器0</td><td>000BH</td></tr><tr><td>2</td><td>外部中断1</td><td>0013H</td></tr><tr><td>3</td><td>定时器1</td><td>001BH</td></tr><tr><td>4</td><td>串行口</td><td>0023H</td></tr></tbody></table><p><strong>完整的中断响应函数的定义格式为：</strong></p><p><strong><font color=#FF3030>返回值数据类型 函数名（形式参数表）[ interrupt n ] [using n]</font></strong></p><p><strong>中断响应函数不需要返回值，因此返回值数据类型为void；</strong></p><p><strong>中断响应函数不能传递参数，因此形式参数表为空；</strong></p><p><strong><font color=#FF3030>中断响应函数一般不需要书写return语句</font>；</strong></p><p><strong><font color=#FF3030>中断响应函数一般使用第1~3组工作寄存器组，同一优先级的中断响应函数可以使用同一个工作寄存器组，不同优先级的中断响应函数最好使用不同的工作寄存器组</font>。</strong></p><p>例：</p><figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">INT0_ISR</span> <span class="params">()</span> interrupt 0  <span class="keyword">using</span> 1 </span>&#123;&#125;</span><br></pre></td></tr></table></figure><p>编程实例：</p><figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;reg51.h&gt;</span></span></span><br><span class="line"><span class="function"><span class="keyword">void</span>  <span class="title">INT0_ISR</span><span class="params">()</span> interrupt 0 <span class="keyword">using</span> 1</span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">……;</span><br><span class="line">&#125; </span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">EX0 = <span class="number">1</span>;<span class="comment">//使能外部中断0</span></span><br><span class="line">EA = <span class="number">1</span>;<span class="comment">//使能全局中断</span></span><br><span class="line">……;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h1>中断资源的编程</h1><ul><li>中断方式</li></ul><p>使能中断，通过编写中断响应函数来完成对中断事件的处理。</p><p>中断标志的检查和中断响应函数的调用由硬件自动完成。</p><ul><li>查询方式</li></ul><p>不使能中断，通过编程查询中断标志位的方式来完成对中断事件的处理。</p><p>中断标志的检查有用户编程实现，中断事件的处理代码可以不书写在中断响应函数中。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 个人笔记 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 51单片机 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Altium Designer新版本PCB电路板添加logo</title>
       <link href="post/3a110de8.html"/>
       <url>post/3a110de8.html</url>
@@ -332,9 +357,9 @@
             
             <tag> 电子产品设计开发 </tag>
             
-            <tag> PCB设计 </tag>
-            
             <tag> 电路原理图设计 </tag>
+            
+            <tag> PCB设计 </tag>
             
         </tags>
       
@@ -469,9 +494,9 @@
             
             <tag> 电子产品设计开发 </tag>
             
-            <tag> PCB设计 </tag>
-            
             <tag> 电路原理图设计 </tag>
+            
+            <tag> PCB设计 </tag>
             
         </tags>
       
